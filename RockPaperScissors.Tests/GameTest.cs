@@ -5,18 +5,18 @@ namespace RockPaperScissors.Tests
     public class GameTest
     {
         [Fact]
-        public void Test1()
+        public void TestSettingPlayerChoice()
         {
-            Assert.Equal(Tool.Rock, SetPlayChoice("r"));
-            Assert.Equal(Tool.Rock, SetPlayChoice("rock"));
+            Assert.Equal(Choice.Rock, GetPlayChoice("r"));
+            Assert.Equal(Choice.Rock, GetPlayChoice("rock"));
 
-            Assert.Equal(Tool.Scissors, SetPlayChoice("scissors"));
-            Assert.Equal(Tool.Scissors, SetPlayChoice("s"));
+            Assert.Equal(Choice.Scissors, GetPlayChoice("scissors"));
+            Assert.Equal(Choice.Scissors, GetPlayChoice("s"));
 
-            Assert.Equal(Tool.Paper, SetPlayChoice("paper"));
-            Assert.Equal(Tool.Paper, SetPlayChoice("p"));
+            Assert.Equal(Choice.Paper, GetPlayChoice("paper"));
+            Assert.Equal(Choice.Paper, GetPlayChoice("p"));
 
-            Assert.Equal(Tool.Invalid, SetPlayChoice("blahh"));
+            Assert.Equal(Choice.Invalid, GetPlayChoice("blahh"));
         }
     }
 }

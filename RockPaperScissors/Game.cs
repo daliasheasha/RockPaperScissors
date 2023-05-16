@@ -14,19 +14,14 @@
 
                 Console.ForegroundColor = ConsoleColor.White;
                 string? userInput = Console.ReadLine();
-                if (string.IsNullOrWhiteSpace(userInput))
+                if (string.IsNullOrWhiteSpace(userInput) || (GetPlayChoice(userInput) is Choice playerChoice && playerChoice == Choice.Invalid))
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Please enter a valid option!");
                     continue;
                 }
 
-
-                Tool playerChoice = SetPlayChoice(userInput);
-                if (playerChoice == Tool.Invalid)
-                {
-                    Console.WriteLine("Please enter a valid option!");
-                }
-                Tool computerChoice = (Tool)new Random().Next(0, 3);
+                Choice computerChoice = (Choice)new Random().Next(0, 3); // Last Enum choice is Invalid
 
                 Console.WriteLine("\nYour choice: " + playerChoice);
                 Console.WriteLine("Computer choice: " + computerChoice);
@@ -36,9 +31,9 @@
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("It's a tie!");
                 }
-                else if ((playerChoice == Tool.Rock && computerChoice == Tool.Scissors) ||
-                         (playerChoice == Tool.Paper && computerChoice == Tool.Rock) ||
-                         (playerChoice == Tool.Scissors && computerChoice == Tool.Paper))
+                else if ((playerChoice == Choice.Rock && computerChoice == Choice.Scissors) ||
+                         (playerChoice == Choice.Paper && computerChoice == Choice.Rock) ||
+                         (playerChoice == Choice.Scissors && computerChoice == Choice.Paper))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("You win!");
@@ -58,31 +53,18 @@
                 }
             }
         }
-        public static Tool SetPlayChoice(string userInput)
+        public static Choice GetPlayChoice(string userInput)
         {
-            Tool playerChoice;
-            switch (userInput)
+            var playerChoice = userInput switch
             {
-                case "rock":
-                case "r":
-                    playerChoice = Tool.Rock;
-                    break;
-                case "paper":
-                case "p":
-                    playerChoice = Tool.Paper;
-                    break;
-                case "scissors":
-                case "s":
-                    playerChoice = Tool.Scissors;
-                    break;
-                default:
-                    playerChoice = Tool.Invalid;
-                    break;
-
-            }
+                "rock" or "r" => Choice.Rock,
+                "paper" or "p" => Choice.Paper,
+                "scissors" or "s" => Choice.Scissors,
+                _ => Choice.Invalid,
+            };
             return playerChoice;
         }
-        public enum Tool
+        public enum Choice
         {
             Rock,
             Paper,
