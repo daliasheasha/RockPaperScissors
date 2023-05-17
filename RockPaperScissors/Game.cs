@@ -53,19 +53,19 @@ public class Game
         if (playerChoice == computerChoice)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            return "It's a tie!!!";
+            return "It's a tie";
         }
         else if ((playerChoice == Choice.Rock && computerChoice == Choice.Scissors) ||
                  (playerChoice == Choice.Paper && computerChoice == Choice.Rock) ||
                  (playerChoice == Choice.Scissors && computerChoice == Choice.Paper))
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            return "You win!!!";
+            return "You win";
         }
         else
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            return "Computer wins!!!";
+            return "Computer wins";
         }
     }
 

@@ -1,4 +1,4 @@
-# RockPaperScissors (https://aka.ms/TipsDemo)
+# RockPaperScissors ([aka.ms/TipsDemo](aka.ms/TipsDemo))
 A simple console application I use to showcase different productivity features in Visual Studio. 
 
 ## Tip 1: Learn Keyboard Shortcuts

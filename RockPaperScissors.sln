@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33711.37
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors", "RockPaperScissors\RockPaperScissors.csproj", "{CC11F51E-2ABA-4766-8409-C708C1B98037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissors", "RockPaperScissors\RockPaperScissors.csproj", "{CC11F51E-2ABA-4766-8409-C708C1B98037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.Tests", "RockPaperScissors.Tests\RockPaperScissors.Tests.csproj", "{31C6B7CB-3C61-473D-B0C7-397CD3E5F8DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissors.Tests", "RockPaperScissors.Tests\RockPaperScissors.Tests.csproj", "{31C6B7CB-3C61-473D-B0C7-397CD3E5F8DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17D0FE43-D6F4-4553-B1D4-58A48AED195A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
