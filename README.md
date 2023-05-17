@@ -1,4 +1,4 @@
-# RockPaperScissors ([aka.ms/TipsDemo](aka.ms/TipsDemo))
+# RockPaperScissors (`aka.ms/TipsDemo`)
 A simple console application I use to showcase different productivity features in Visual Studio. 
 
 ## Tip 1: Learn Keyboard Shortcuts
@@ -12,14 +12,14 @@ A simple console application I use to showcase different productivity features i
 - `Alt + F12` : Peek Definition
 - ``Alt + ` `` : secret navigation menu
 
-# Tip 3: Enable Sticky Scroll
+## Tip 3: Enable Sticky Scroll
 - Tools > Options... > Text Editor > General > Check "Group the current scopes within a scrollable region of the editor window"
 
-# Tip 4: Edit Code Easily
+## Tip 4: Edit Code Easily
 - `Ctrl + .` : Quick Actions
 - `Ctrl + Alt + Click` : multi-line select
 - `Shift + Enter` : start a new line
 
-# Tip 5: Use Code Cleanup
+## Tip 5: Use Code Cleanup
 - `Ctrl + K, Ctrl + E` : manually invoke code cleanup
 - Tools > Options... > Text Editor > Code Cleanup > Check "Run Code Cleanup profilie on Save"
