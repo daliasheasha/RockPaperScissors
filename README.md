@@ -4,7 +4,7 @@ A simple console application I use to showcase different productivity features i
 ## Tip 1: Learn Keyboard Shortcuts
 - `Ctrl + Q` : search for shortcuts
 - Options > Environment > Keyboard : Customize shortcuts 
-- Checkout [Shortcut Cheatsheet](https://visualstudio.microsoft.com/keyboard-shortcuts.pdf)
+- Checkout [shortcut cheatsheet](https://visualstudio.microsoft.com/keyboard-shortcuts.pdf)
 
 ## Tip 2: Navigate Code Quickly
 - `Ctrl + -` OR `Ctrl + Shift + -` : Navigate backwards/forwards
@@ -13,7 +13,7 @@ A simple console application I use to showcase different productivity features i
 - ``Alt + ` `` : secret navigation menu
 
 ## Tip 3: Enable Sticky Scroll
-- Tools > Options... > Text Editor > General > Check "Group the current scopes within a scrollable region of the editor window"
+- Tools > Options... > Text Editor > General > Enable `Group the current scopes within a scrollable region of the editor window`
 
 ## Tip 4: Edit Code Easily
 - `Ctrl + .` : Quick Actions
@@ -21,5 +21,5 @@ A simple console application I use to showcase different productivity features i
 - `Shift + Enter` : start a new line
 
 ## Tip 5: Use Code Cleanup
+- Tools > Options... > Text Editor > Code Cleanup > Enable `Run Code Cleanup profilie on Save` 
 - `Ctrl + K, Ctrl + E` : manually invoke code cleanup
-- Tools > Options... > Text Editor > Code Cleanup > Check "Run Code Cleanup profilie on Save"
