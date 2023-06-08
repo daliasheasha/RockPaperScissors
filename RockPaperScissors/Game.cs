@@ -1,6 +1,7 @@
 ﻿namespace RockPaperScissors;
 public class Game
 {
+
     public static void Play()
     {
         Console.ForegroundColor = ConsoleColor.Green;
@@ -38,7 +39,7 @@ public class Game
 
     public static Choice GetPlayChoice(string userInput)
     {
-        var playerChoice = userInput switch
+        Choice playerChoice = userInput switch
         {
             "rock" or "r" => Choice.Rock,
             "paper" or "p" => Choice.Paper,
@@ -53,19 +54,19 @@ public class Game
         if (playerChoice == computerChoice)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            return "It's a tie";
+            return "It's a tie!";
         }
         else if ((playerChoice == Choice.Rock && computerChoice == Choice.Scissors) ||
-                 (playerChoice == Choice.Paper && computerChoice == Choice.Rock) ||
+                 (playerChoice == Choice.Paper && computerChoice == Choice.Paper) ||
                  (playerChoice == Choice.Scissors && computerChoice == Choice.Paper))
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            return "You win";
+            return "You win!";
         }
         else
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            return "Computer wins";
+            return "Computer wins!";
         }
     }
 
