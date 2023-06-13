@@ -57,7 +57,7 @@ public class Game
             return "It's a tie!";
         }
         else if ((playerChoice == Choice.Rock && computerChoice == Choice.Scissors) ||
-                 (playerChoice == Choice.Paper && computerChoice == Choice.Paper) ||
+                 (playerChoice == Choice.Paper && computerChoice == Choice.Rock) ||
                  (playerChoice == Choice.Scissors && computerChoice == Choice.Paper))
         {
             Console.ForegroundColor = ConsoleColor.Green;
