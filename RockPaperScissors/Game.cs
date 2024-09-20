@@ -6,6 +6,7 @@ public class Game
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Let's play Rock, Paper, Scissors!\n");
+        Console.WriteLine("And have a great time!\n");
 
         while (true)
         {
