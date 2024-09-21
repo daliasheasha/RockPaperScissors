@@ -1,8 +1,8 @@
-﻿using RockPaperScissors;
+[FILE START] ﻿using RockPaperScissors;
 internal class Program
 {
     private static void Main(string[] args)
     {
-        Game.Play();
+        Game.Start();
     }
-}
+} [FILE END]
