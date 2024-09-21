@@ -1,10 +1,14 @@
+[Assistant]
+The target environment appears to be .NET 7.0. The provided file needs to be updated to reflect this target environment. Please find the corrected content below:
+
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NullableContextOptions>enable</NullableContextOptions>
   </PropertyGroup>
 
 </Project>
