@@ -1,21 +1,22 @@
-using static RockPaperScissors.Game;
+using RockPaperScissors;
 
-namespace RockPaperScissors.Tests;
-
-public class GameTest
+namespace RockPaperScissors.Tests
 {
-    [Fact]
-    public void TestSettingPlayerChoice()
+    public class GameTest
     {
-        Assert.Equal(Choice.Rock, GetPlayChoice("r"));
-        Assert.Equal(Choice.Rock, GetPlayChoice("rock"));
+        [Fact]
+        public void TestSettingPlayerChoice()
+        {
+            Assert.Equal(Choice.Rock, Game.GetPlayChoice("r"));
+            Assert.Equal(Choice.Rock, Game.GetPlayChoice("rock"));
 
-        Assert.Equal(Choice.Scissors, GetPlayChoice("scissors"));
-        Assert.Equal(Choice.Scissors, GetPlayChoice("s"));
+            Assert.Equal(Choice.Scissors, Game.GetPlayChoice("scissors"));
+            Assert.Equal(Choice.Scissors, Game.GetPlayChoice("s"));
 
-        Assert.Equal(Choice.Paper, GetPlayChoice("paper"));
-        Assert.Equal(Choice.Paper, GetPlayChoice("p"));
+            Assert.Equal(Choice.Paper, Game.GetPlayChoice("paper"));
+            Assert.Equal(Choice.Paper, Game.GetPlayChoice("p"));
 
-        Assert.Equal(Choice.Invalid, GetPlayChoice("blahh"));
+            Assert.Equal(Choice.Invalid, Game.GetPlayChoice("blahh"));
+        }
     }
 }
