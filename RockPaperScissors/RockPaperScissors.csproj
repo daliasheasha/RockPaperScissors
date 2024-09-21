@@ -1,3 +1,5 @@
+The provided file appears to be using an invalid TargetFramework value. The correct value for .NET 7.0 is "net7.0" whereas the current value is "net7.0". Please find the corrected file content below:
+
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
